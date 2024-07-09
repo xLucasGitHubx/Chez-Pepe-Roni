@@ -53,6 +53,9 @@ header {
 header img {
 	height: 8vw;
 }
+.active {
+	color: #ff0000;
+}
 
 nav {
 	font-size: 1vw;
