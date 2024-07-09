@@ -22,6 +22,7 @@ section {
 }
 body {
 	line-height: 1;
+    background-color: #ffffed;
 }
 ol,
 ul {
@@ -73,6 +74,39 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+nav .hamburgerIcon{
+    display: none;
+}
+
+@media screen and (max-width: 641px) {
+	nav .hamburgerIcon {
+		display: block;
+		width: 6vw;
+	}
+	nav a {
+		display: none;
+	}
+	header img {
+		height: 18vw;
+	}
+
+	.open_menu {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #303030;
+		width: 100vw;
+		height: 100%;
+		font-size: 4vw;
+	}
+}
+
 /* main contact page */
 #container_contact{
     font-family: "Raleway", sans-serif;
@@ -82,19 +116,20 @@ nav a:hover {
     text-align: center;
     font-size: xx-large;
     margin: 10px 0;
+    color: #FF0000;
 }
 
 #section_contact{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;    
 }
 
 /*form left column contact page */
 #form_contact{
     display: flex;
     flex-direction: column;
-    background-color: #e7e5e5;
+    background-color: #ebe7e7;
     width: 80%;
     border-radius: 4px;
 }
@@ -139,10 +174,42 @@ input[type=submit] {
 }
 
 /* img right column contact page */
+
 #right_side_contact img{
-    height: 70vh;
-    margin-top: 20px;
-    margin-right: 10px;
+    height: 75vh;
+    margin-top: 15px;
+    margin-right: 100px;
 }
 
+/* middle column infos contact page */
+#middle_column_contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#middle_column_contact p{
+    margin: 10px 5px;
+}
+
+#middle_column_contact img{
+    filter: invert(1);
+}
+
+
 /* mobile version for the contact page */
+@media screen and (max-width: 760px) {
+    #section_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form_contact{
+        width:100%;
+    }
+
+    #right_side_contact img {
+        margin-left: 100px;
+    }
+}
