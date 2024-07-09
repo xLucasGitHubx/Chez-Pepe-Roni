@@ -193,14 +193,9 @@ input[type="submit"] {
 	margin: 10px 5px;
 }
 
-<<<<<<< HEAD
-#middle_column_contact img{
-    filter: invert(1);
-    margin-right: 5px;
-=======
 #middle_column_contact img {
 	filter: invert(1);
->>>>>>> 8644de3b023078f5a60aebfbf4ddfe552d74f2d1
+	margin-right: 5px;
 }
 
 /* ---ajout pour header */
