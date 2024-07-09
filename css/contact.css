@@ -194,6 +194,7 @@ input[type=submit] {
 
 #middle_column_contact img{
     filter: invert(1);
+    margin-right: 5px;
 }
 
 
