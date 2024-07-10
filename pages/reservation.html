@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Réservation - Chez la Pépée Rony</title>
-		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" href="../css/reservation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-		<script src="../scripts/hamburger.js" async></script>
-	</head>
 
-	<body>
-		<header>
-			<a href="../index.html"><img src="../vista_logo/logo-svg.svg" alt="logo_pepe_roni" /></a>
-		</header>
-		<nav>
-			<img class="hamburgerIcon" src="../icons/hamburger_icon.svg" alt="bouton hamburger" />
-			<a href="../index.html">Accueil</a>
-			<a href="./panier.html">Commande</a>
-			<a href="./carte.html">Carte</a>
-			<a href="../pages/reservation.html" class="active">Réservation</a>
-			<a href="../pages/contact.html">Contact</a>
-		</nav>
-		<main>
-			<h1>Réservation</h1>
-			<article>
-				<form id="reservation_form">
-					<section>
-						<h2>Dates disponibles :</h2>
-						<ul id="date_disponibles">
-							<!-- Liste des dates disponibles générée par JavaScript -->
-						</ul>
-						<input type="date" id="selected-date" />
-					</section>
-					<section>
-						<h2>Horaires disponibles :</h2>
-						<ul id="heure_disponibles">
-							<!-- Liste des horaires disponibles générée par JavaScript -->
-						</ul>
-						<input type="time" id="selected-hour" />
-					</section>
-					<h2>Vos informations :</h2>
-					<section>
-						<label for="name">Nom :</label>
-						<input type="text" id="name" required />
-					</section>
-					<section>
-						<label for="email">Adresse e-mail :</label>
-						<input type="email" id="email" required />
-					</section>
-					<section>
-						<label for="phone">Téléphone :</label>
-						<input type="tel" id="phone" required />
-					</section>
-					<section>
-						<label for="clients">Nombre de personnes :</label>
-						<input type="number" id="clients" min="1" required />
-					</section>
-					<button type="submit">Réserver</button>
-				</form>
-			</article>
-			<article class="mascotte">
-				<p>Voici notre superbe mascotte!</p>
-				<img src="../image/loli.webp" alt="mascotte" />
-			</article>
-		</main>
-		<footer>
-			<div class="partie1">
-				<div class="enligne">
-					<a href="#accueil">Accueil</a>
-					<a href="#contact">Nous contacter</a>
-					<a href="#reserver">Réserver</a>
-					<a href="#rejoindre">Nous rejoindre</a>
-					<a href="#mentions">Mentions légales</a>
-					<a href="#">Tous droits réservés © Chez la Pépé Rino</a>
-				</div>
-				<div class="footer_contact">
-					<a>13 rue des margarita, 31520 Toulouse</a>
-					<a href="tel:+33645478510">+33 6 45 47 85 10</a>
-				</div>
-			</div>
-			<div>
-				<div>
-					<form class="newsletter">
-						<label for="newsletter">Newsletter</label>
-						<input type="email" id="newsletter" name="newsletter" placeholder="Votre email" />
-						<button type="submit">S'abonner</button>
-					</form>
-				</div>
-				<section class="iconsFooter">
-					<a href="https://www.instagram.com" target="_blank"><img src="../icons/icons8-instagram.svg"
-							alt="" /></a>
-					<a href="https://www.twitter.com" target="_blank"><img src="../icons/icons8-twitter.svg"
-							alt="Twitter" /></a>
-					<a href="https://www.facebook.com" target="_blank"><img src="../icons/icons8-facebook.svg"
-							alt="Facebook" /></a>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Réservation - Chez la Pépée Rony</title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/reservation.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet" />
+	<script src="../scripts/hamburger.js" async></script>
+</head>
+
+<body>
+	<header>
+		<a href="../index.html"><img src="../vista_logo/logo-svg.svg" alt="logo_pepe_roni" /></a>
+	</header>
+	<nav>
+		<img class="hamburgerIcon" src="../icons/hamburger_icon.svg" alt="bouton hamburger" />
+		<a href="../index.html">Accueil</a>
+		<a href="./panier.html">Commande</a>
+		<a href="./carte.html">Carte</a>
+		<a href="../pages/reservation.html" class="active">Réservation</a>
+		<a href="../pages/contact.html">Contact</a>
+	</nav>
+	<main>
+		<h1>Réservation</h1>
+		<article>
+			<form id="reservation_form">
+				<section>
+					<h2>Dates disponibles :</h2>
+					<ul id="date_disponibles">
+						<!-- Liste des dates disponibles générée par JavaScript -->
+					</ul>
+					<input type="date" id="selected-date" />
 				</section>
+				<section>
+					<h2>Horaires disponibles :</h2>
+					<ul id="heure_disponibles">
+						<!-- Liste des horaires disponibles générée par JavaScript -->
+					</ul>
+					<input type="time" id="selected-hour" />
+				</section>
+				<h2>Vos informations :</h2>
+				<section>
+					<label for="name">Nom :</label>
+					<input type="text" id="name" required />
+				</section>
+				<section>
+					<label for="email">Adresse e-mail :</label>
+					<input type="email" id="email" required />
+				</section>
+				<section>
+					<label for="phone">Téléphone :</label>
+					<input type="tel" id="phone" required />
+				</section>
+				<section>
+					<label for="clients">Nombre de personnes :</label>
+					<input type="number" id="clients" min="1" required />
+				</section>
+				<button type="submit">Réserver</button>
+			</form>
+		</article>
+		<article class="mascotte">
+			<p>Voici notre superbe mascotte!</p>
+			<img src="../image/loli.webp" alt="mascotte" />
+		</article>
+	</main>
+	<footer>
+		<div class="partie1">
+			<div class="enligne">
+				<a href="#accueil">Accueil</a>
+				<a href="#contact">Nous contacter</a>
+				<a href="#reserver">Réserver</a>
+				<a href="#rejoindre">Nous rejoindre</a>
+				<a href="#mentions">Mentions légales</a>
+				<a href="#">Tous droits réservés © Chez la Pépé Rino</a>
 			</div>
-	</body>
+			<div class="footer_contact">
+				<a>13 rue des margarita, 31520 Toulouse</a>
+				<a href="tel:+33645478510">+33 6 45 47 85 10</a>
+			</div>
+		</div>
+		<div>
+			<div>
+				<form class="newsletter">
+					<label for="newsletter">Newsletter</label>
+					<input type="email" id="newsletter" name="newsletter" placeholder="Votre email" />
+					<button type="submit">S'abonner</button>
+				</form>
+			</div>
+			<section class="iconsFooter">
+				<a href="https://www.instagram.com" target="_blank"><img src="../icons/icons8-instagram.svg"
+						alt="" /></a>
+				<a href="https://www.twitter.com" target="_blank"><img src="../icons/icons8-twitter.svg"
+						alt="Twitter" /></a>
+				<a href="https://www.facebook.com" target="_blank"><img src="../icons/icons8-facebook.svg"
+						alt="Facebook" /></a>
+			</section>
+		</div>
+</body>
+
 </html>
