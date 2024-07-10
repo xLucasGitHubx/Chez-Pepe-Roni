@@ -82,16 +82,16 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__prev>label:nth-child(5),
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__next>label:nth-child(2),
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__prev>label:nth-child(1),
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__next>label:nth-child(3),
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__prev>label:nth-child(2),
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__next>label:nth-child(4),
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__prev>label:nth-child(3),
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__next>label:nth-child(5),
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__prev>label:nth-child(4),
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__next>label:nth-child(1) {
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
 	opacity: 1 !important;
 	z-index: 3;
 }
@@ -121,64 +121,64 @@ body {
 	overflow: hidden;
 }
 
-.carousel>input[type="radio"] {
+.carousel > input[type="radio"] {
 	position: absolute;
 	left: 0;
 	opacity: 0;
 	top: 0;
 }
 
-.carousel>input[type="radio"]:checked~.carousel__items .carousel__item,
-.carousel>input[type="radio"]:checked~.carousel__prev>label,
-.carousel>input[type="radio"]:checked~.carousel__next>label {
+.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item,
+.carousel > input[type="radio"]:checked ~ .carousel__prev > label,
+.carousel > input[type="radio"]:checked ~ .carousel__next > label {
 	opacity: 0;
 }
 
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__items .carousel__item:nth-child(1) {
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
 	opacity: 1;
 }
 
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__nav>label:nth-child(1) {
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
 	background: #ccc;
 	cursor: default;
 	pointer-events: none;
 }
 
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__items .carousel__item:nth-child(2) {
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
 	opacity: 1;
 }
 
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__nav>label:nth-child(2) {
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
 	background: #ccc;
 	cursor: default;
 	pointer-events: none;
 }
 
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__items .carousel__item:nth-child(3) {
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
 	opacity: 1;
 }
 
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__nav>label:nth-child(3) {
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
 	background: #ccc;
 	cursor: default;
 	pointer-events: none;
 }
 
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__items .carousel__item:nth-child(4) {
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
 	opacity: 1;
 }
 
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__nav>label:nth-child(4) {
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
 	background: #ccc;
 	cursor: default;
 	pointer-events: none;
 }
 
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__items .carousel__item:nth-child(5) {
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) {
 	opacity: 1;
 }
 
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__nav>label:nth-child(5) {
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
 	background: #ccc;
 	cursor: default;
 	pointer-events: none;
@@ -209,8 +209,8 @@ body {
 	vertical-align: middle;
 }
 
-.carousel__prev>label,
-.carousel__next>label {
+.carousel__prev > label,
+.carousel__next > label {
 	border: 1px solid #fff;
 	border-radius: 50%;
 	cursor: pointer;
@@ -227,47 +227,48 @@ body {
 	z-index: 2;
 }
 
-.carousel__prev>label:hover,
-.carousel__next>label:hover,
-.carousel__prev>label:focus,
-.carousel__next>label:focus {
+.carousel__prev > label:hover,
+.carousel__next > label:hover,
+.carousel__prev > label:focus,
+.carousel__next > label:focus {
 	opacity: 0.5 !important;
 }
 
-.carousel__prev>label:before,
-.carousel__next>label:before,
-.carousel__prev>label:after,
-.carousel__next>label:after {
+.carousel__prev > label:before,
+.carousel__next > label:before,
+.carousel__prev > label:after,
+.carousel__next > label:after {
 	content: "";
 	position: absolute;
 	width: inherit;
 	height: inherit;
 }
 
-.carousel__prev>label:before,
-.carousel__next>label:before {
-	background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+.carousel__prev > label:before,
+.carousel__next > label:before {
+	background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),
+		linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
 	width: 60%;
 	height: 60%;
 	top: 20%;
 }
 
-.carousel__prev>label {
+.carousel__prev > label {
 	left: 2%;
 }
 
-.carousel__prev>label:before {
+.carousel__prev > label:before {
 	left: 35%;
 	top: 20%;
 	transform: rotate(135deg);
 	-webkit-transform: rotate(135deg);
 }
 
-.carousel__next>label {
+.carousel__next > label {
 	right: 2%;
 }
 
-.carousel__next>label:before {
+.carousel__next > label:before {
 	left: 10%;
 	transform: rotate(315deg);
 	-webkit-transform: rotate(315deg);
@@ -282,12 +283,12 @@ body {
 	z-index: 3;
 }
 
-.carousel__nav>label {
+.carousel__nav > label {
 	border: 1px solid #fff;
 	display: inline-block;
 	border-radius: 50%;
 	cursor: pointer;
-	margin: 0 0.130%;
+	margin: 0 0.13%;
 	width: 10px;
 	height: 10px;
 }
@@ -348,6 +349,7 @@ section {
 	margin-right: 3vw;
 }
 
+<<<<<<< HEAD
 /* effet scroll fonctionnalité JS */
 .effet_js {
     opacity: 0;
@@ -375,3 +377,123 @@ section {
   .effet_js:nth-child(3) {
     transition-delay: 400ms;
   }
+=======
+/* ---------foooter------ */
+footer input {
+	all: unset;
+	background-color: white;
+}
+footer button {
+	margin-top: 2vw;
+	margin-left: 40%;
+	color: white;
+	background-color: #ff0000;
+	border-radius: 20vw;
+	padding: 0.5vw;
+	font-size: 1.5vw;
+}
+footer button:hover {
+	box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+footer label {
+	font-size: 1.7vw;
+	margin-right: 1.5vw;
+}
+
+footer {
+	background-color: #b31b1b;
+	margin-top: 2vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.partie1 div {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+}
+.partie1 {
+	margin-left: 1.5vw;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	margin-right: 1vw;
+	font-size: 1.5vw;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.newsletter {
+	margin-top: 2vw;
+	margin-right: 2vw;
+	display: flex;
+	color: white;
+}
+#newsletter {
+	margin: 0;
+	border-radius: 0;
+}
+.newsletter button {
+	border-radius: 0;
+	margin: 0;
+}
+.newsletter label {
+	margin-top: 0.5vw;
+}
+
+footer form {
+	height: 70%;
+}
+.iconsFooter {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+	margin-left: 4vw;
+	margin-top: 2vw;
+	padding: 0;
+}
+.iconsFooter img {
+	width: 5vw;
+}
+/* --------------------- */
+
+@media screen and (max-width: 760px) {
+	/* --------Footer---responsive--- */
+	footer {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.iconsFooter {
+		margin-top: 2vw;
+		flex-direction: row;
+		margin-bottom: 2vw;
+	}
+	.iconsFooter img {
+		width: 7vw;
+	}
+	.partie1 {
+		display: flex;
+	}
+	.enligne {
+		display: none;
+	}
+	footer a {
+		padding-top: 2vw;
+		font-size: 2.5vw;
+	}
+	footer label {
+		font-size: 5vw;
+		margin-right: 1.5vw;
+	}
+
+	footer button {
+		font-size: 4vw;
+	}
+	/* ---footer fin--------- */
+}
+>>>>>>> fcf393cbb93bd154aea46a7f285a8b27d24e442f

@@ -204,6 +204,88 @@ input[type="submit"] {
 }
 /* --------- */
 
+/* ---------foooter------ */
+footer input {
+	all: unset;
+	background-color: white;
+}
+footer button {
+	margin-top: 2vw;
+	margin-left: 40%;
+	color: white;
+	background-color: #ff0000;
+	border-radius: 20vw;
+	padding: 0.5vw;
+	font-size: 1.5vw;
+}
+footer button:hover {
+	box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+footer label {
+	font-size: 1.7vw;
+	margin-right: 1.5vw;
+}
+
+footer {
+	background-color: #b31b1b;
+	margin-top: 2vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.partie1 div {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+}
+.partie1 {
+	margin-left: 1.5vw;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	margin-right: 1vw;
+	font-size: 1.5vw;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.newsletter {
+	margin-top: 2vw;
+	margin-right: 2vw;
+	display: flex;
+	color: white;
+}
+#newsletter {
+	margin: 0;
+	border-radius: 0;
+}
+.newsletter button {
+	border-radius: 0;
+	margin: 0;
+}
+.newsletter label {
+	margin-top: 0.5vw;
+}
+
+footer form {
+	height: 70%;
+}
+.iconsFooter {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+	margin-left: 4vw;
+	margin-top: 2vw;
+}
+.iconsFooter img {
+	width: 5vw;
+}
+/* --------------------- */
+
 /* mobile version for the contact page */
 @media screen and (max-width: 760px) {
 	#section_contact {
@@ -219,6 +301,40 @@ input[type="submit"] {
 	#right_side_contact img {
 		margin-left: 100px;
 	}
+
+	/* --------Footer---responsive--- */
+	footer {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	.iconsFooter {
+		margin-top: 2vw;
+		flex-direction: row;
+		margin-bottom: 2vw;
+	}
+	.iconsFooter img {
+		width: 7vw;
+	}
+	.partie1 {
+		display: flex;
+	}
+	.enligne {
+		display: none;
+	}
+	footer a {
+		padding-top: 2vw;
+		font-size: 2.5vw;
+	}
+	footer label {
+		font-size: 5vw;
+		margin-right: 1.5vw;
+	}
+
+	footer button {
+		font-size: 4vw;
+	}
+	/* ---footer fin--------- */
 }
 
 /* effet scroll fonctionnalité JS */
