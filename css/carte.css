@@ -1,238 +1,77 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+body {
+	background-color: #ededed;
+	font-family: "Raleway", sans-serif; /* changed font family to Raleway */
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
+
+h1 {
+	padding: 40px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+li a {
+	text-decoration: none;
+	color: #2d2f31;
+}
+
 section {
+	/* changed nav to section */
+	width: 50vw; /* changed width to 100% */
+	background: #d9d9d9;
+	margin: 40px auto;
+	padding: 20px; /* added padding */
+}
+
+label span {
+	padding: 30px;
+	background: #b31b1b;
+	color: white;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	cursor: pointer;
 	display: block;
 }
-body {
-	line-height: 1;
+
+label span::after {
+	float: right;
+	right: 10%;
+	content: "+";
 }
-ol,
-ul {
-	list-style: none;
-}
-blockquote,
-q {
-	quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* header */
-header {
+
+.slide {
+	clear: both;
 	width: 100%;
-	background-color: #303030;
+	height: 0px;
+	overflow: hidden;
+	text-align: center;
+	transition: height 0.4s ease;
 	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-header img {
-	height: 8vw;
-}
-.active {
-	color: #ff0000;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-nav {
-	font-size: 1vw;
-	display: flex;
-	justify-content: space-between;
+.slide li {
+	padding: 10px;
+	height: 10vw;
+	width: 12vw;
+}
+
+input[type="checkbox"] {
 	position: absolute;
-	width: 90vw;
-	top: 6.5vw;
-	left: 5vw;
-	font-family: "Raleway", sans-serif;
-}
-nav .hamburgerIcon {
-	display: none;
-}
-nav a {
-	color: white;
-	text-decoration: none;
-}
-nav a:hover {
-	text-decoration: underline;
-}
-/* ---------foooter------ */
-footer input {
-	all: unset;
-	background-color: white;
-}
-footer button {
-	margin-top: 2vw;
-	margin-left: 40%;
-	color: white;
-	background-color: #ff0000;
-	border-radius: 20vw;
-	padding: 0.5vw;
-	font-size: 1.5vw;
-}
-footer button:hover {
-	box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	height: 0px;
 }
 
-footer label {
-	font-size: 1.7vw;
-	margin-right: 1.5vw;
+input[type="checkbox"]:checked + .slide {
+	height: 25vw;
 }
 
-footer {
-	background-color: #b31b1b;
-	margin-top: 2vw;
-	display: flex;
-	justify-content: space-between;
+main img {
+	width: 14vw;
+	height: 7vw;
+	object-fit: cover;
 }
 
-.partie1 div {
-	margin-top: 1vw;
-	margin-bottom: 1vw;
-}
-.partie1 {
-	margin-left: 1.5vw;
-}
-
-footer a {
-	text-decoration: none;
-	color: white;
-	margin-right: 1vw;
-	font-size: 1.5vw;
-}
-
-footer a:hover {
-	text-decoration: underline;
-}
-
-.newsletter {
-	margin-top: 2vw;
-	margin-right: 2vw;
-	display: flex;
-	color: white;
-}
-#newsletter {
-	margin: 0;
-	border-radius: 0;
-}
-.newsletter button {
-	border-radius: 0;
-	margin: 0;
-}
-.newsletter label {
-	margin-top: 0.5vw;
-}
-
-footer form {
-	height: 70%;
-}
-.iconsFooter {
-	display: flex;
-	width: 70%;
-	justify-content: space-between;
-	margin-left: 4vw;
-	margin-top: 2vw;
-}
-.iconsFooter img {
-	width: 5vw;
-}
-@media screen and (max-width: 760px) {
-	nav .hamburgerIcon {
-		display: block;
-		width: 6vw;
-	}
-	nav a {
-		display: none;
-	}
-	header img {
-		height: 18vw;
-	}
-
-	.open_menu {
-		margin: 0;
-		padding: 0;
-		display: flex;
-		position: absolute;
-		top: 0;
-		left: 0;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		background-color: #303030;
-		width: 100vw;
-		height: 100%;
-		font-size: 4vw;
-		z-index: 10;
-	}
-	h1 {
-		font-size: 4vw;
-	}
-
-	section {
-		flex-direction: column;
-	}
-	form {
-		width: 65%;
-	}
-	h2 {
-		font-size: 3vw;
-	}
-	label,
-	button {
-		font-size: 3vw;
-	}
-	/* --------Footer---responsive--- */
-	footer {
-		flex-direction: column-reverse;
-		align-items: center;
-		justify-content: center;
-	}
-	.iconsFooter {
-		margin-top: 2vw;
-		flex-direction: row;
-		margin-bottom: 2vw;
-	}
-	.iconsFooter img {
-		width: 7vw;
-	}
-	.partie1 {
-		display: flex;
-	}
-	.enligne {
-		display: none;
-	}
-	footer a {
-		padding-top: 2vw;
-		font-size: 2.5vw;
-	}
-	footer label {
-		font-size: 5vw;
-		margin-right: 1.5vw;
-	}
-
-	footer button {
-		font-size: 4vw;
-	}
-	/* ---footer fin--------- */
+main p {
+	font-size: 0.8vw;
 }
