@@ -425,6 +425,7 @@ footer form {
 	justify-content: space-between;
 	margin-left: 4vw;
 	margin-top: 2vw;
+	padding: 0;
 }
 .iconsFooter img {
 	width: 5vw;
