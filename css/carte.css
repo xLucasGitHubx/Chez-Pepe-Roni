@@ -1,0 +1,77 @@
+body {
+	background-color: #ededed;
+	font-family: "Raleway", sans-serif; /* changed font family to Raleway */
+}
+
+h1 {
+	padding: 40px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+li a {
+	text-decoration: none;
+	color: #2d2f31;
+}
+
+section {
+	/* changed nav to section */
+	width: 50vw; /* changed width to 100% */
+	background: #d9d9d9;
+	margin: 40px auto;
+	padding: 20px; /* added padding */
+}
+
+label span {
+	padding: 30px;
+	background: #b31b1b;
+	color: white;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	cursor: pointer;
+	display: block;
+}
+
+label span::after {
+	float: right;
+	right: 10%;
+	content: "+";
+}
+
+.slide {
+	clear: both;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	text-align: center;
+	transition: height 0.4s ease;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.slide li {
+	padding: 10px;
+	height: 10vw;
+	width: 12vw;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	height: 0px;
+}
+
+input[type="checkbox"]:checked + .slide {
+	height: 25vw;
+}
+
+main img {
+	width: 14vw;
+	height: 7vw;
+	object-fit: cover;
+}
+
+main p {
+	font-size: 0.8vw;
+}
