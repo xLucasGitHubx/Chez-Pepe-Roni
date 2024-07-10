@@ -41,6 +41,7 @@ q:after {
 	content: "";
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -54,9 +55,11 @@ header {
 	align-items: center;
 	justify-content: center;
 }
+
 header img {
 	height: 8vw;
 }
+
 .active {
 	color: #ff0000;
 }
@@ -83,26 +86,49 @@ nav a:hover {
 }
 
 /* ---------foooter------ */
+/* 3 colonnes et 2 lignes */
+
+/* footer{
+	display:grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+} */
+
+
 footer {
 	background-color: #b31b1b;
 	margin-top: 2vw;
 	display: flex;
 	justify-content: space-between;
+	height: 200px;
+}
+
+.partie1 {
+	margin-left: 1.5vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.enligne {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.footer_contact {
+	display: flex;
+	flex-direction: row;
 }
 
 .partie1 div {
 	margin-top: 1vw;
 	margin-bottom: 1vw;
 }
-.partie1 {
-	margin-left: 1.5vw;
-}
 
 footer a {
 	text-decoration: none;
 	color: white;
 	margin-right: 1vw;
-	font-size: 1.5vw;
 }
 
 footer a:hover {
@@ -116,26 +142,46 @@ footer a:hover {
 	color: white;
 }
 .newsletter button {
-	border-radius: 0;
-	margin: 0;
+	width: 80%;
+	height: 80%;
+	background-color: #303030;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
+
 .newsletter label {
-	margin-top: 0.5vw;
+	margin-top: 0.7vw;
+	margin-right: 8px;
+}
+
+input[type="text"] {
+	width: 80%;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 footer form {
-	height: 70%;
+	height: 50%;
 }
+
 .iconsFooter {
 	display: flex;
-	width: 70%;
 	justify-content: space-between;
 	margin-left: 4vw;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top : 0;
 }
 .iconsFooter img {
-	width: 5vw;
+	width: 4vw;
 }
-/* --------------------- */
+
 @media screen and (max-width: 641px) {
 	nav .hamburgerIcon {
 		display: block;
@@ -147,7 +193,6 @@ footer form {
 	header img {
 		height: 18vw;
 	}
-
 	.open_menu {
 		margin: 0;
 		padding: 0;
@@ -182,11 +227,9 @@ footer form {
 		font-size: 3vw;
 	}
 
-	/* --------Footer---responsive--- */
 	footer {
+		display: flex;
 		flex-direction: column-reverse;
-		align-items: center;
-		justify-content: center;
 		position: absolute;
 		bottom: 0;
 	}
@@ -199,6 +242,8 @@ footer form {
 	}
 	.partie1 {
 		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 	}
 	.enligne {
 		display: none;
@@ -207,8 +252,8 @@ footer form {
 		padding-top: 2vw;
 		font-size: 2.5vw;
 	}
-	/* ---footer fin--------- */
 }
+/* ---footer fin--------- */
 
 /* effet scroll fonctionnalité JS */
 .effet_js {
