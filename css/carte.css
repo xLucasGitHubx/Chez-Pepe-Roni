@@ -14,7 +14,7 @@ li a {
 	color: #2d2f31;
 }
 
-section {
+.bg_carte {
 	/* changed nav to section */
 	width: 50vw; /* changed width to 100% */
 	background: #d9d9d9;
