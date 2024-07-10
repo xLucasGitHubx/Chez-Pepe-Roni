@@ -1,99 +1,13 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-body {
-	line-height: 1;
-	background: #ffffed;
-	margin: 0;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* header */
-header {
-	width: 100%;
-	background-color: #303030;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-header img {
-	height: 8vw;
-}
-
-nav {
-	font-size: 1vw;
-	display: flex;
-	justify-content: space-between;
-	position: absolute;
-	width: 90vw;
-	top: 6.5vw;
-	left: 5vw;
-	font-family: "Raleway", sans-serif;
-}
-
-nav a {
-	color: white;
-	text-decoration: none;
-}
-
-nav a:hover {
-	text-decoration: underline;
-}
-
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__prev>label:nth-child(5),
-.carousel>input[type="radio"]:nth-child(1):checked~.carousel__next>label:nth-child(2),
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__prev>label:nth-child(1),
-.carousel>input[type="radio"]:nth-child(2):checked~.carousel__next>label:nth-child(3),
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__prev>label:nth-child(2),
-.carousel>input[type="radio"]:nth-child(3):checked~.carousel__next>label:nth-child(4),
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__prev>label:nth-child(3),
-.carousel>input[type="radio"]:nth-child(4):checked~.carousel__next>label:nth-child(5),
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__prev>label:nth-child(4),
-.carousel>input[type="radio"]:nth-child(5):checked~.carousel__next>label:nth-child(1) {
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
 	opacity: 1 !important;
 	z-index: 3;
 }
@@ -105,6 +19,7 @@ nav a:hover {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
+
 
 .container {
 	width: 900px;
@@ -345,3 +260,4 @@ section {
 	width: 420px;
 	margin-right: 3vw;
 }
+

@@ -1,125 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chez la Pépée Rony</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/accueil.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Chez la Pépée Rony</title>
-	<link rel="stylesheet" href="./css/accueil.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chez la Pépée Rony</title>
+		<link rel="stylesheet" href="./css/accueil.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin="" />
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""></script>
+	</head>
 
-<body>
-	<header>
-		<a href="./index.html"><img src="./vista_logo/logo-svg.svg" alt="logo_pepe_roni" /></a>
-	</header>
-	<nav>
-		<img class="hamburgerIcon" src="#" alt="bouton hamburger" style="display: none" />
-		<a href="./index.html">Accueil</a>
-		<a href="">Commande</a>
-		<a href="">Carte</a>
-		<a href="./pages/reservation.html">Réservation</a>
-		<a href="./pages/contact.html">Contact</a>
-	</nav>
-	<div class="container">
-		<div class="carousel">
-			<input type="radio" id="carousel-1" name="carousel[]" checked />
-			<input type="radio" id="carousel-2" name="carousel[]" />
-			<input type="radio" id="carousel-3" name="carousel[]" />
-			<input type="radio" id="carousel-4" name="carousel[]" />
-			<ul class="carousel__items">
-				<li class="carousel__item"><img src="./image/20220211142754-margherita-9920.jpg" alt="" /></li>
-				<li class="carousel__item"><img src="./image/i179313-4-pizza-burger.webp" alt="" /></li>
-				<li class="carousel__item"><img src="./image/7916_w1024h1024c1cx2808cy1872.webp" alt="" /></li>
-				<li class="carousel__item"><img src="./image/Image7.jpg" alt="" /></li>
-			</ul>
-			<div class="carousel__prev">
-				<label for="carousel-1"></label>
-				<label for="carousel-2"></label>
-				<label for="carousel-3"></label>
-				<label for="carousel-4"></label>
-			</div>
-			<div class="carousel__next">
-				<label for="carousel-1"></label>
-				<label for="carousel-2"></label>
-				<label for="carousel-3"></label>
-				<label for="carousel-4"></label>
-			</div>
-			<div class="carousel__nav">
-				<label for="carousel-1"></label>
-				<label for="carousel-2"></label>
-				<label for="carousel-3"></label>
-				<label for="carousel-4"></label>
-			</div>
-		</div>
-	</div>
-	<h1>Bienvenue chez la Pépée <br />Rony !</h1>
-	<div class="texte">
-		<p>
-			Située au coeur de la ville, Chez la Pépée Rony vous invite à une expérience culinaire unique, alliant
-			tradition italienne et saveurs locales.
-			Depuis notre ouverture, nous sommes devenus une référence pour tous les amateurs de pizzas gourmandes et
-			authentiques. Que vous veniez en
-			famille, avec vos amis, notre pizzeria vous accueille dans une atmosphère chaleureuse et conviviale. Pour
-			ceux qui préfèrent savourer nos
-			pizzas à la maison, nous proposons un service de commande en ligne simple et efficace.
-		</p>
-		<img id="mascotte" src="./image/media_475584051089903837_1720432402.webp" />
-	</div>
-	<section>
-		<div class="reseaux">
-			<h2>Suivez-nous !</h2>
-			<img class="icon" src="./image/icons8-insta-50.png" />
-			<img class="icon" src="./image/icons8-facebook-nouveau-50.png" />
-			<img class="icon" src="./image/icons8-twitterx-50.png" />
-		</div>
-		<div id="map"></div>
-	</section>
-	<footer>
-		<div class="partie1">
-			<div>
-				<div class="enligne">
-					<a href="#accueil">Accueil</a>
-					<a href="#contact">Nous contacter</a>
-					<a href="#reserver">Réserver</a>
+	<body>
+		<header>
+			<a href="./index.html"><img src="./vista_logo/logo-svg.svg" alt="logo_pepe_roni" /></a>
+		</header>
+		<nav>
+			<img class="hamburgerIcon" src="./icons/hamburger_icon.svg" alt="bouton hamburger" />
+			<a href="index.html">Accueil</a>
+			<a href="">Commande</a>
+			<a href="./pages/carte.html">Carte</a>
+			<a href="./pages/reservation.html">Réservation</a>
+			<a href="./pages/contact.html">Contact</a>
+		</nav>
+		<div class="container">
+			<div class="carousel">
+				<input type="radio" id="carousel-1" name="carousel[]" checked />
+				<input type="radio" id="carousel-2" name="carousel[]" />
+				<input type="radio" id="carousel-3" name="carousel[]" />
+				<input type="radio" id="carousel-4" name="carousel[]" />
+				<ul class="carousel__items">
+					<li class="carousel__item"><img src="./image/20220211142754-margherita-9920.jpg" alt="" /></li>
+					<li class="carousel__item"><img src="./image/i179313-4-pizza-burger.webp" alt="" /></li>
+					<li class="carousel__item"><img src="./image/7916_w1024h1024c1cx2808cy1872.webp" alt="" /></li>
+					<li class="carousel__item"><img src="./image/Image7.jpg" alt="" /></li>
+				</ul>
+				<div class="carousel__prev">
+					<label for="carousel-1"></label>
+					<label for="carousel-2"></label>
+					<label for="carousel-3"></label>
+					<label for="carousel-4"></label>
 				</div>
-				<a href="#rejoindre">Nous rejoindre</a> |
-				<a href="#mentions">Mentions légales</a>
+				<div class="carousel__next">
+					<label for="carousel-1"></label>
+					<label for="carousel-2"></label>
+					<label for="carousel-3"></label>
+					<label for="carousel-4"></label>
+				</div>
+				<div class="carousel__nav">
+					<label for="carousel-1"></label>
+					<label for="carousel-2"></label>
+					<label for="carousel-3"></label>
+					<label for="carousel-4"></label>
+				</div>
 			</div>
-			<div>
-				<a href="#">Tous droits réservés © Chez la Pépé Rino</a>
-			</div>
-			<div>
-				<a>13 rue des margarita, 31520 Toulouse</a>
-			</div>
-			<a href="tel:+33645478510">+33 6 45 47 85 10</a>
 		</div>
-		<div>
-			<div>
-				<form class="newsletter">
-					<label for="newsletter">Newsletter</label>
-					<input type="email" id="newsletter" name="newsletter" placeholder="Votre email" />
-					<button type="submit">S'abonner</button>
-				</form>
-			</div>
-			<section class="iconsFooter">
-				<a href="https://www.instagram.com" target="_blank"><img src="../icons/icons8-instagram.svg"
-						alt="" /></a>
-				<a href="https://www.twitter.com" target="_blank"><img src="../icons/icons8-twitter.svg"
-						alt="Twitter" /></a>
-				<a href="https://www.facebook.com" target="_blank"><img src="../icons/icons8-facebook.svg"
-						alt="Facebook" /></a>
-			</section>
+		<h1 class="effet_js">Bienvenue chez la Pépée <br />Rony !</h1>
+		<div class="texte">
+			<p class="effet_js">
+				Située au coeur de la ville, Chez la Pépée Rony vous invite à une expérience culinaire unique, alliant tradition italienne et saveurs locales.
+				Depuis notre ouverture, nous sommes devenus une référence pour tous les amateurs de pizzas gourmandes et authentiques. Que vous veniez en
+				famille, avec vos amis, notre pizzeria vous accueille dans une atmosphère chaleureuse et conviviale. Pour ceux qui préfèrent savourer nos
+				pizzas à la maison, nous proposons un service de commande en ligne simple et efficace.
+			</p>
+			<img class="effet_js" id="mascotte" src="./image/media_475584051089903837_1720432402.webp" />
 		</div>
-	</footer>
-	<script src="./css/script.js"></script>
-</body>
-
+		<section>
+			<div class="reseaux effet_js">
+				<h2>Suivez-nous !</h2>
+				<img class="icon" src="./image/icons8-insta-50.png" />
+				<img class="icon" src="./image/icons8-facebook-nouveau-50.png" />
+				<img class="icon" src="./image/icons8-twitterx-50.png" />
+			</div>
+			<div id="map"></div>
+		</section>
+		<footer>
+			<div class="partie1">
+				<div>
+					<div class="enligne">
+						<a href="#accueil">Accueil</a>
+						<a href="#contact">Nous contacter</a>
+						<a href="#reserver">Réserver</a>
+					</div>
+					<a href="#rejoindre">Nous rejoindre</a> |
+					<a href="#mentions">Mentions légales</a>
+				</div>
+				<div>
+					<a href="#">Tous droits réservés © Chez la Pépé Rino</a>
+				</div>
+				<div>
+					<a>13 rue des margarita, 31520 Toulouse</a>
+				</div>
+				<a href="tel:+33645478510">+33 6 45 47 85 10</a>
+			</div>
+			<div>
+				<div>
+					<form class="newsletter">
+						<label for="newsletter">Newsletter</label>
+						<input type="email" id="newsletter" name="newsletter" placeholder="Votre email" />
+						<button type="submit">S'abonner</button>
+					</form>
+				</div>
+				<section class="iconsFooter">
+					<a href="https://www.instagram.com" target="_blank"><img src="../icons/icons8-instagram.svg" alt="" /></a>
+					<a href="https://www.twitter.com" target="_blank"><img src="../icons/icons8-twitter.svg" alt="Twitter" /></a>
+					<a href="https://www.facebook.com" target="_blank"><img src="../icons/icons8-facebook.svg" alt="Facebook" /></a>
+				</section>
+			</div>
+		</footer>
+		<script src="./scripts/effects.js"></script>
+		<script src="./scripts/script.js"></script>
+		<script src="./scripts/hamburger.js"></script>
+	</body>
 </html>

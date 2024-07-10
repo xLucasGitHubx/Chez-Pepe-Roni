@@ -3,16 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Réservation - Chez la Pépée Rony</title>
-		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" href="../css/reservation.css" />
+		<title>Chez la Pépée Rony</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/carte.css" />
 		<script src="../scripts/hamburger.js" async></script>
+		<script src="../scripts/effects.js" async></script>
 	</head>
 
 	<body>
+		<!-- header de la page -->
 		<header>
 			<a href="./index.html"><img src="../vista_logo/logo-svg.svg" alt="logo_pepe_roni" /></a>
 		</header>
@@ -21,52 +23,10 @@
 			<a href="../index.html">Accueil</a>
 			<a href="">Commande</a>
 			<a href="">Carte</a>
-			<a href="../pages/reservation.html" class="active">Réservation</a>
-			<a href="../pages/contact.html">Contact</a>
+			<a hCef="./reservation.html">Réservation</a>
+			<a href="./contact.html" class="active">Contact</a>
 		</nav>
-		<main>
-			<h1>Réservation</h1>
-			<article>
-				<form id="reservation_form">
-					<section>
-						<h2>Dates disponibles :</h2>
-						<ul id="date_disponibles">
-							<!-- Liste des dates disponibles générée par JavaScript -->
-						</ul>
-						<input type="date" id="selected-date" />
-					</section>
-					<section>
-						<h2>Horaires disponibles :</h2>
-						<ul id="heure_disponibles">
-							<!-- Liste des horaires disponibles générée par JavaScript -->
-						</ul>
-						<input type="time" id="selected-hour" />
-					</section>
-					<h2>Vos informations :</h2>
-					<section>
-						<label for="name">Nom :</label>
-						<input type="text" id="name" required />
-					</section>
-					<section>
-						<label for="email">Adresse e-mail :</label>
-						<input type="email" id="email" required />
-					</section>
-					<section>
-						<label for="phone">Téléphone :</label>
-						<input type="tel" id="phone" required />
-					</section>
-					<section>
-						<label for="clients">Nombre de personnes :</label>
-						<input type="number" id="clients" min="1" required />
-					</section>
-					<button type="submit">Réserver</button>
-				</form>
-			</article>
-			<article class="mascotte">
-				<p>Voici notre superbe mascotte!</p>
-				<img src="../image/loli.webp" alt="mascotte" />
-			</article>
-		</main>
+		<main></main>
 		<footer>
 			<div class="partie1">
 				<div>

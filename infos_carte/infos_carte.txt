@@ -1,0 +1,20 @@
+Boisson_1 : limonade au citron italienne, 3€50
+Boisson_2 : jus de clémentine italien, 4€
+Boisson_3 : jus de fraise italien, 4€
+Boisson_4 : jus de chinotto, 4€50
+Boisson_5 : jus de citron italien, 4€
+
+Dessert_1 : tiramisu au café maison, sans amaretto, 6€
+Dessert_2 : cannelo maison goût pistache ou citron 7€
+Dessert_3 : pana cotta maison en fonction des fruits de saison 6€50
+
+Entree_1 : burrata de bufflone accompagnée de légumes verts, 8€
+Entree_2 : trio de bruschetta tomate basilique aïl et persil, 7€
+Entree_3 : mini raviolis ricotta épinards, 9€
+
+Pizza_1 : La margarita - base tomate, fromage et basilique, 11€
+Pizza_2 : la tomatta - base tomate, gorgonzola, morceaux de tomates confites et origan, 12€
+Pizza_3 : la parma - base tomate, jambon de parmes, champignon de paris, salami, scarmoza, basilique et huile à l'aïl, 13€
+Pizza_4 : la leche - base blanche, champignon de paris, scarmoza, parmesan, petits légumes verts, poivron, 13€
+Pizza_5 : la reina- base tomate, olives, poivrons jaunes et rouges, saucisse de toulouse, champignon de paris, crème fraiche et bacon, 15€
+Pizza_6 : la roquetta - base tomate, roquette, épinard frais, jambon de parmes, poivrons et parmesan râpé, 14€
