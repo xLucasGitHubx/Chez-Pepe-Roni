@@ -241,6 +241,8 @@ footer form {
 	.iconsFooter {
 		margin-top: 2vw;
 		flex-direction: row;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.iconsFooter img {
 		width: 7vw;
