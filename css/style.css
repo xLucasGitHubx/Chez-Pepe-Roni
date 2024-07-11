@@ -85,14 +85,7 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-/* ---------foooter------ */
-/* 3 colonnes et 2 lignes */
-
-/* footer{
-	display:grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 1fr 1fr;
-} */
+/* ---------footer------ */
 
 footer {
 	background-color: #b31b1b;
