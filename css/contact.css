@@ -88,6 +88,15 @@ input[type="submit"] {
 	filter: invert(1);
 	margin-right: 5px;
 }
+#newsletter {
+	width: 100%;
+	padding: initial;
+	margin: 0;
+	display: initial;
+	border: 0;
+	border-radius: 0;
+	box-sizing: initial;
+}
 
 /* mobile version for the contact page */
 @media screen and (max-width: 760px) {
