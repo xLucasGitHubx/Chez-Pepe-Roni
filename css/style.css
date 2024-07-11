@@ -237,7 +237,7 @@ footer form {
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: center;
-		bottom: 0;
+		height: 25vh;
 	}
 	.iconsFooter {
 		margin-top: 2vw;
@@ -248,11 +248,12 @@ footer form {
 	}
 	.partie1 {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-around;
 	}
 	.enligne {
-		display: none;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	footer a {
 		padding-top: 2vw;
